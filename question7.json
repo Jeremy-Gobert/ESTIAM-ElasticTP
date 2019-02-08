@@ -1,0 +1,10 @@
+{
+	"query": {
+		"term": { "borough": "brooklyn" }
+	},
+    "aggs" : {
+        "nombre-restaurant" : {
+        "terms" : { "field": "cuisine" }
+      } },
+"size": 0
+}

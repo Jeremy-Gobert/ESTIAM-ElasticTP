@@ -1,0 +1,13 @@
+{
+    "query": {
+        "bool" : {
+            "must" : [
+                {"match" : {"cuisine" : "hamburgers"} }
+            ],
+      "filter": {
+        "geo_distance": {
+          "distance": "2km", 
+        	"address.coord": { 
+            	"lat":  40.738633,
+        		 "lon": -73.997486
+} } } } } }
